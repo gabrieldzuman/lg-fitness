@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #141414;
+    color: #fff;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.section-primeira {
+    background: url("https://img.freepik.com/fotos-gratis/halteres-no-chao-de-uma-academia-ai-generative_123827-23743.jpg") no-repeat center center/cover;
+    color: #fff;
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-primeira-conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.section-primeira h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.section-primeira p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.botao-saibaMais {
+    background-color: #28a745;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-saibaMais:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.div-promocao {
+    margin-top: 5rem;
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.div-promocao h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.div-promocao p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.div-promocao strong {
+    color: #e53935;
+}
+
+.botao-promocao {
+    background-color: #e53935;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-promocao:hover {
+    background-color: #c62828;
+}
+
+.div-servicos {
+    background: url("https://tecnofit-site.s3.sa-east-1.amazonaws.com/media/files/2023/10/20160631/layout-para-academia-scaled.jpg");
+    padding: 2rem;
+    text-align: center;
+    height: 65vh;
+}
+
+.div-servicos h2 {
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.cards-servico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom:5rem;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #333;
+}
+
+.galeria-fotos {
+    background: #141414;
+    padding: 2rem;
+    text-align: center;
+}
+
+.galeria-fotos h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+footer {
+    background-color: #141414;
+    color: #fff;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rodape-logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape-logo img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+.rodape-logo h2 {
+    margin-top: 0.5rem;
+}
+
+.rodape-links, .footer-contact, .footer-social {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.rodape-links h3, .footer-contact h3, .footer-social h3 {
+    margin-bottom: 1rem;
+}
+
+.rodape-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape-links li {
+    margin-bottom: 0.5rem;
+}
+
+.rodape-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.rodape-links a:hover {
+    color: #28a745;
+}
+
+.rodape-endereco p {
+    margin-bottom: 0.5rem;
+}
+
+.rodape-redeSocial {
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.rodape-redeSocial a {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.rodape-redeSocial img {
+    max-width: 24px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.rodape-copyright {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
